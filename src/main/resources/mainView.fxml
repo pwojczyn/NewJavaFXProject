@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pwojczyn.testproject.controllers.MainController">
+   <children>
+      <TabPane layoutX="28.0" layoutY="27.0" prefHeight="457.0" prefWidth="556.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Lista telefonów">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="446.0" prefWidth="560.0">
+                     <children>
+                        <ListView fx:id="listContacts" layoutX="50.0" layoutY="61.0" prefHeight="182.0" prefWidth="177.0" />
+                        <Button fx:id="buttonLogout" layoutX="50.0" layoutY="279.0" mnemonicParsing="false" text="Wyloguj" />
+                        <TextField fx:id="textName" layoutX="267.0" layoutY="94.0" />
+                        <TextField fx:id="textNumber" layoutX="267.0" layoutY="212.0" />
+                        <Label layoutX="267.0" layoutY="61.0" text="Nazwa kontaktu" />
+                        <Label layoutX="269.0" layoutY="165.0" text="Numer telefonu" />
+                        <Button fx:id="buttonEditContact" layoutX="139.0" layoutY="279.0" mnemonicParsing="false" text="Edytuj kontakt" />
+                        <Button fx:id="buttonEraseContact" layoutX="268.0" layoutY="279.0" mnemonicParsing="false" text="Usuń kontakt" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Dodaj kontakt">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="newContact" layoutX="193.0" layoutY="116.0" />
+                        <TextField fx:id="newNumber" layoutX="193.0" layoutY="199.0" />
+                        <Button fx:id="newButtonContact" layoutX="204.0" layoutY="277.0" mnemonicParsing="false" text="Dodaj nowy kontakt" />
+                        <Label layoutX="193.0" layoutY="87.0" text="Nazwa nowego kontaktu" />
+                        <Label layoutX="193.0" layoutY="170.0" text="Numer telefonu" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
